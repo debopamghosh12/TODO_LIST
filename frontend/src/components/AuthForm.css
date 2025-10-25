@@ -1,0 +1,83 @@
+/* frontend/src/components/AuthForm.css */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* Offset for the fixed navbar */
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: block !important; /* Force block layout */
+}
+
+/* Title */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Groups */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block; /* Label on its own line */
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: block !important; /* Fix inline overrides */
+}
+
+/* Button */
+.auth-form button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.auth-form button:hover {
+  background: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Extra protection against global form CSS */
+.auth-container form {
+  display: block !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
